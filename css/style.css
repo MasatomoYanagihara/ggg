@@ -1,0 +1,314 @@
+@charset "UTF-8";
+/* ---------- ハンバーガーメニュー ---------- */
+button {
+  margin: 20px 40px;
+}
+
+nav {
+  padding-top: 18px;
+  opacity: 0.8;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+nav .drawer-brand {
+  color: orangered;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+nav .drawer-menu-item {
+  font-size: 26px;
+  color: black;
+  font-weight: bold;
+}
+
+nav .drawer-menu-item:hover {
+  -webkit-text-decoration: underline orangered !important;
+          text-decoration: underline orangered !important;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1500px;
+  height: 100px;
+  margin-bottom: 20px;
+  background-color: #f8f7f6;
+}
+
+.header h1 {
+  color: black;
+  font-size: 68px;
+  font-family: "Pinyon Script", cursive;
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 30px;
+}
+
+/* ---------- カルーセル ---------- */
+.img-slider {
+  max-width: 1400px;
+  margin: 0 auto 300px;
+}
+
+.img-slider img {
+  width: 1400px;
+  height: 680px;
+}
+
+/* ---------- 斜線 ---------- */
+.diagonal-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 170px;
+  margin-left: 60px;
+}
+
+.diagonal-line .item {
+  width: 260px;
+  height: 16px;
+  background-color: black;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+.diagonal-line .item3 {
+  width: 260px;
+  height: 16px;
+  background-color: orangered;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+/* ---------- ABOUT_SECTION ---------- */
+.section2 {
+  max-width: 1500px;
+  height: 400px;
+  background-color: gainsboro;
+  position: relative;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.section2 .left {
+  width: 400px;
+  height: 580px;
+  background: url(../img/img07.jpg) center center no-repeat;
+  background-size: cover;
+  position: absolute;
+  -webkit-transform: translate(220px, 80px);
+          transform: translate(220px, 80px);
+  -webkit-box-shadow: 16px 16px 10px black;
+          box-shadow: 16px 16px 10px black;
+}
+
+.section2 .right {
+  width: 500px;
+  height: 220px;
+  position: absolute;
+  -webkit-transform: translate(760px, 80px);
+          transform: translate(760px, 80px);
+}
+
+.section2 .right .title {
+  color: black;
+  font-size: 52px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.section2 .right p {
+  font-size: 28px;
+  line-height: 140%;
+  font-weight: bold;
+  margin-left: 90px;
+}
+
+/* ---------- バックグラウンドレインボー ---------- */
+.section2 {
+  background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+  background-size: 1800% 1800%;
+  -webkit-animation: rainbow 18s ease infinite;
+  -z-animation: rainbow 18s ease infinite;
+  animation: rainbow 18s ease infinite;
+}
+
+@-webkit-keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+
+@keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+
+/* ---------- MOREボタン ---------- */
+.container {
+  text-align: right;
+  margin: 80px 210px 380px 0;
+}
+
+.btn {
+  background-color: White;
+  color: black;
+  border: 8px solid black;
+  padding: 20px 100px;
+  font-size: 42px;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn.shadow {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.btn.shadow:hover {
+  -webkit-transform: translate(-2.5px, -2.5px);
+          transform: translate(-2.5px, -2.5px);
+  -webkit-box-shadow: 14px 14px 0 0 orangered;
+          box-shadow: 14px 14px 0 0 orangered;
+}
+
+/* ---------- MEMBER_SECTION ---------- */
+.section3 {
+  margin: 0 auto 140px;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.section3 .wrapper {
+  margin: 0 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.section3 .title {
+  color: orangered;
+  text-align: center;
+  font-weight: bold;
+  font-size: 52px;
+  margin-bottom: 80px;
+}
+
+.section3 .accordion1 ul,
+.section3 .accordion2 ul,
+.section3 .accordion3 ul {
+  display: none;
+}
+
+.section3 .accordion1,
+.section3 .accordion2,
+.section3 .accordion3 {
+  /* ここで全体的なメニューのサイズ */
+  width: 320px;
+  height: 210px;
+  text-align: center;
+  cursor: pointer;
+  border-bottom: black;
+}
+
+.section3 .accordion1 .accordion-btn1,
+.section3 .accordion1 .accordion-btn2,
+.section3 .accordion1 .accordion-btn3,
+.section3 .accordion2 .accordion-btn1,
+.section3 .accordion2 .accordion-btn2,
+.section3 .accordion2 .accordion-btn3,
+.section3 .accordion3 .accordion-btn1,
+.section3 .accordion3 .accordion-btn2,
+.section3 .accordion3 .accordion-btn3 {
+  /* ボタン */
+  font-size: 200%;
+  font-weight: bold;
+  width: 100%;
+  text-align: bottom;
+  display: inline-block;
+  background-color: #fff;
+  color: #000;
+  padding-bottom: 6px;
+  border-bottom: 10px solid #000;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.section3 .accordion1 .accordion-btn1:hover,
+.section3 .accordion1 .accordion-btn2:hover,
+.section3 .accordion1 .accordion-btn3:hover,
+.section3 .accordion2 .accordion-btn1:hover,
+.section3 .accordion2 .accordion-btn2:hover,
+.section3 .accordion2 .accordion-btn3:hover,
+.section3 .accordion3 .accordion-btn1:hover,
+.section3 .accordion3 .accordion-btn2:hover,
+.section3 .accordion3 .accordion-btn3:hover {
+  color: orangered;
+}
+
+.section3 .accordion1 ul,
+.section3 .accordion1 li,
+.section3 .accordion1 a,
+.section3 .accordion2 ul,
+.section3 .accordion2 li,
+.section3 .accordion2 a,
+.section3 .accordion3 ul,
+.section3 .accordion3 li,
+.section3 .accordion3 a {
+  /* ボタンの中身 */
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  color: #333;
+}
+
+.section3 .accordion1 ul,
+.section3 .accordion2 ul,
+.section3 .accordion3 ul {
+  padding-left: 80px;
+}
+
+.section3 .accordion1 li,
+.section3 .accordion2 li,
+.section3 .accordion3 li {
+  padding: 8px 0px 5px 0px;
+}
+
+footer {
+  background-color: #f8f7f6;
+  text-align: right;
+  padding: 26px 60px 26px 0;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+footer p {
+  color: #424040;
+}
+/*# sourceMappingURL=style.css.map */
