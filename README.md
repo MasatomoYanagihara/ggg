@@ -1,2 +1,2 @@
 # ggg
-課題　LP作成（リッチ版）
+https://master.d3gufy7260moy8.amplifyapp.com
